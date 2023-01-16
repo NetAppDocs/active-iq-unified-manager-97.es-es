@@ -1,0 +1,83 @@
+---
+permalink: online-help/concept-all-workloads.html 
+sidebar: sidebar 
+keywords: workloads,workloads 
+summary: La vista All Workloads muestra la lista de todas las cargas de trabajo disponibles en los clústeres en un centro de datos. 
+---
+= Todas las cargas de trabajo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La vista All Workloads muestra la lista de todas las cargas de trabajo disponibles en los clústeres en un centro de datos.
+
+La vista todas las cargas de trabajo enumera las cargas de trabajo de almacenamiento asociadas con los clústeres de ONTAP gestionados por Unified Manager. La página también permite asignar políticas de eficiencia del almacenamiento y niveles de servicio de rendimiento a las cargas de trabajo de almacenamiento.
+
+Cuando se añaden clústeres a Unified Manager, las cargas de trabajo de almacenamiento de cada clúster se detectan y se muestran automáticamente en esta página, excepto los volúmenes FlexGroup y sus componentes.
+
+Unified Manager comienza a analizar las cargas de trabajo para recomendación (niveles de servicio de rendimiento recomendados) solo después de que comiencen las operaciones de I/o en las cargas de trabajo de almacenamiento. En el caso de las cargas de trabajo de almacenamiento recién descubiertas en las que no se han realizado operaciones de I/o, el estado es «'esperando a que se produzca un I/o». Cuando las operaciones de I/o empiezan en las cargas de trabajo de almacenamiento, Unified Manager inicia el análisis y el estado de la carga de trabajo cambia a «'Aprendizaje...». Una vez completado el análisis (dentro de las 24 horas desde el comienzo de las operaciones de I/o), se muestran los niveles de servicio de rendimiento recomendados para las cargas de trabajo de almacenamiento.
+
+Con la opción *cargas de trabajo* > *todas las cargas de trabajo*, puede realizar varias tareas:
+
+* Añada o aprovisione cargas de trabajo de almacenamiento
+* Ver y filtrar la lista de cargas de trabajo
+* Asigne niveles de servicio de rendimiento a cargas de trabajo de almacenamiento individuales
+* Asigne niveles de servicio de rendimiento recomendados por el sistema a todas las cargas de trabajo sin asignar
+* Asigne políticas de eficiencia del almacenamiento a cargas de trabajo de almacenamiento
+
+
+
+
+== Agregar o aprovisionar cargas de trabajo de almacenamiento
+
+Puede agregar o aprovisionar las cargas de trabajo de almacenamiento a LUN compatibles (compatibles tanto con los protocolos iSCSI como FCP), recursos compartidos de archivos NFS y recursos compartidos SMB.
+
+
+
+== Visualización y filtrado de cargas de trabajo
+
+En la pantalla All Workloads, puede ver todas las cargas de trabajo del centro de datos o buscar cargas de trabajo de almacenamiento específicas en función de los niveles de servicio de rendimiento que se les hayan asignado o los nombres de las cargas de trabajo. Puede usar el icono de filtro para introducir condiciones específicas para su búsqueda. Puede buscar por diferentes condiciones de filtro, como por el clúster de hosts o la máquina virtual de almacenamiento. Si selecciona la opción *total de capacidad*, puede buscar según la capacidad total de las cargas de trabajo. El número de cargas de trabajo que se devuelven puede variar en función de la condición de filtro exacta que se haya introducido, ya que la capacidad se compara a nivel de byte. La pantalla muestra información del almacenamiento para las cargas de trabajo, como el clúster de host y la máquina virtual de almacenamiento, junto con el nivel de servicio de rendimiento y la Política de eficiencia del almacenamiento, si las hubiera.
+
+La página también permite ver los detalles de rendimiento de una carga de trabajo. Para ver información detallada sobre las IOPS, la capacidad y la latencia de la carga de trabajo, haga clic en el botón *elegir / columnas de pedido* y seleccione columnas específicas para ver. La columna Performance View muestra la tasa media y máxima de IOPS de una carga de trabajo, y puede hacer clic en el icono del analizador de cargas de trabajo para ver el análisis detallado de IOPS. El botón *analizar carga de trabajo* del cuadro emergente Análisis de IOPS le lleva a la página Análisis de carga de trabajo, donde puede seleccionar un intervalo de tiempo y ver las tendencias de latencia, rendimiento y capacidad para la carga de trabajo seleccionada. Para obtener más información acerca del analizador de cargas de trabajo, consulte _solución de problemas de cargas de trabajo mediante el analizador de cargas de trabajo_
+
+link:concept-troubleshooting-workloads-using-the-workload-analyzer.adoc["Solucionar problemas de cargas de trabajo mediante el analizador de cargas de trabajo"]
+
+
+
+== Asignación de niveles de servicio de rendimiento a cargas de trabajo de almacenamiento
+
+Puede asignar un nivel de servicio de rendimiento a una o varias cargas de trabajo de almacenamiento. Al utilizar las distintas navegaciones en la pantalla, puede asignar un nivel de servicio de rendimiento específico o recomendado por el sistema a las cargas de trabajo.
+
+
+
+== Asignación de niveles de servicio de rendimiento recomendados por el sistema a todas las cargas de trabajo sin asignar
+
+Es posible asignar niveles de servicio de rendimiento a todas las cargas de trabajo de almacenamiento de un centro de datos que no tienen ninguna PSU asignada, siempre que haya niveles de servicio de rendimiento recomendados por el sistema disponibles para las cargas de trabajo. Esta funcionalidad no es efectiva para las cargas de trabajo que no tienen disponibles niveles de servicio de rendimiento recomendados por el sistema. Para utilizar esta funcionalidad, haga clic en el botón *asignar archivos PSL* recomendados por el sistema. El sistema evalúa internamente los niveles de servicio de rendimiento adecuados para las cargas de trabajo de almacenamiento sin asignar y muestra el número total de cargas de trabajo en las que se pueden asignar los niveles de servicio de rendimiento.
+
+
+
+== Asignación de políticas de eficiencia del almacenamiento a cargas de trabajo de almacenamiento
+
+Puede asignar una Política de eficiencia del almacenamiento a una o varias cargas de trabajo de almacenamiento. Si utiliza las diferentes navegaciones que aparecen en la pantalla, puede asignar una Política de eficiencia del almacenamiento específica a las cargas de trabajo de almacenamiento.
+
+
+
+== Asignación conjunta de nivel de servicio de rendimiento y política de eficiencia del almacenamiento
+
+Puede asignar un nivel de servicio de rendimiento y una política de eficiencia del almacenamiento a una sola carga de trabajo juntas. Siga estos pasos:
+
+. Haga clic en el icono de edición de la fila y, a continuación, haga clic en *Editar*.
++
+Los campos *nivel de servicio de rendimiento asignado* y *Política de eficiencia de almacenamiento* están activados.
+
+. Seleccione el nivel de servicio de rendimiento y la normativa de eficiencia del almacenamiento necesarios.
+. Haga clic en el icono de comprobación para aplicar los cambios.
+
+
+
+
+== Análisis de criterios de rendimiento y capacidad para una carga de trabajo
+
+Puede ver información de rendimiento sobre una carga de trabajo para ayudarle con la solución de problemas haciendo clic en el icono del gráfico de barras en la columna *Vista de rendimiento*. Para ver los gráficos de rendimiento y capacidad en la página Análisis de carga de trabajo para analizar el objeto, haga clic en el botón *analizar carga de trabajo*.

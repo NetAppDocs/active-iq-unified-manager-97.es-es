@@ -1,0 +1,75 @@
+---
+permalink: online-help/task-provisioning-fileshares.html 
+sidebar: sidebar 
+keywords:  
+summary: 'La página de carga de trabajo de aprovisionamiento le permite crear LUN \(compatibles con los protocolos iSCSI y FCP\) o recursos compartidos de archivos \(compatibles con los protocolos CIFS/SMB y NFS\) para un clúster existente y una máquina virtual de almacenamiento \(máquina virtual de almacenamiento\) cuando haya espacio libre disponible.' 
+---
+= Aprovisionamiento de cargas de trabajo
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+La página de aprovisionamiento de carga de trabajo le permite crear LUN (compatibles tanto con los protocolos iSCSI como FCP) o recursos compartidos de archivos (compatibles con los protocolos CIFS/SMB y NFS) para un clúster y una máquina virtual de almacenamiento (VM de almacenamiento) existentes cuando hay espacio libre disponible.
+
+
+
+== Antes de empezar
+
+* Al menos uno de los servicios SMB, NFS, iSCSI y FCP, o todos los servicios deben estar habilitados en el equipo virtual de almacenamiento. Si crea LUN, deben habilitarse iSCSI y FCP.
+* Para seleccionar y asignar el nivel de servicio de rendimiento y la política de eficiencia del almacenamiento en la carga de trabajo, deben haberse creado las políticas antes de comenzar a crear la carga de trabajo.
+
+
+
+
+== Pasos
+
+. En la página *Provision Workload*, agregue el nombre de la carga de trabajo que desea crear y, a continuación, seleccione el clúster de la lista disponible en la que desea crear la carga de trabajo.
+. En función del clúster que haya seleccionado, el campo *Storage VM* filtra las máquinas virtuales de almacenamiento disponibles para ese clúster. Seleccione la máquina virtual de almacenamiento que desee de la lista.
++
+Según los servicios SMB, NFS, iSCSI y FCP compatibles con el equipo virtual de almacenamiento, las opciones NAS y SAN se habilitan en la sección Host Information.
+
+. En la sección *almacenamiento y optimización*, asigne la capacidad de almacenamiento y el nivel de servicio de rendimiento y, opcionalmente, la Política de eficiencia del almacenamiento para la carga de trabajo.
++
+Las especificaciones del nivel de servicio de rendimiento se aplican a la carga de trabajo y las especificaciones de la política de eficiencia del almacenamiento se asignan al volumen y a la LUN, según corresponda, cuando se crea la carga de trabajo.
+
+. Active la casilla de verificación *imponer límites de rendimiento* si desea aplicar el nivel de servicio de rendimiento que ha asignado a la carga de trabajo. La asignación de un nivel de servicio de rendimiento a una carga de trabajo garantiza que el agregado en el que se crea la carga de trabajo pueda admitir los objetivos de rendimiento y capacidad definidos en el nivel de servicio de rendimiento correspondiente. Por ejemplo, si se asigna una carga de trabajo «'rendimiento extremo», el agregado en el que se va a aprovisionar la carga de trabajo debería tener la capacidad de respaldar los objetivos de rendimiento y capacidad del nivel de servicio «rendimiento extremo», como el almacenamiento de SSD.
++
+[NOTE]
+====
+A menos que seleccione esta casilla de comprobación, el nivel de servicio de rendimiento no se aplicará en la carga de trabajo y el estado de la carga de trabajo en la consola se muestra como sin asignar.
+
+====
+. Si está creando un recurso compartido de archivos SMB y/o NFS, seleccione el botón *NAS*. Este botón solo se habilita para la selección cuando la máquina virtual de almacenamiento tiene habilitados los servicios necesarios.
++
+[NOTE]
+====
+Si su SVM está habilitado para los servicios SMB y NFS, puede seleccionar los botones *Compartir por NFS* y *Compartir por SMB* y crear un recurso compartido de archivos que admita los protocolos NFS y SMB. Si desea crear un recurso compartido SMB o CIFS, seleccione solo el botón respectivo.
+
+====
++
+.. Para los recursos compartidos de archivos NFS, especifique la dirección IP del host o la red para acceder al volumen de recursos compartidos de archivos. Puede introducir valores separados por comas para varios hosts.
++
+En el caso de añadir la dirección IP del host, se ejecuta una comprobación interna para hacer coincidir los detalles del host con la SVM y la política de exportación de ese host, o bien, en caso de que exista una política existente, se vuelve a utilizar. Si hay varios recursos compartidos NFS creados para el mismo host, se reutilizará una política de exportación disponible para el mismo host con reglas coincidentes para todos los archivos compartidos. La función de especificar reglas de directivas individuales o volver a utilizar directivas proporcionando claves de directiva específicas está disponible cuando se aprovisiona el recurso compartido NFS mediante API.
+
+.. Para un recurso compartido de SMB, especifique qué usuarios o grupos de usuarios pueden acceder al recurso compartido de SMB y asignar los permisos necesarios. Para cada grupo de usuarios, se genera una nueva lista de control de acceso (ACL) durante la creación del recurso compartido de archivos.
+
+
+. Para crear LUN, seleccione el botón *SAN*. Este botón se habilita para la selección únicamente cuando la máquina virtual de almacenamiento seleccionada tiene habilitados los servicios necesarios.
++
+.. Seleccione el sistema operativo host.
+.. Especifique la asignación de hosts para el LUN. Puede asignar grupos de iniciadores existentes (iGroups), o definir y asignar nuevos iGroups a las LUN para controlar qué iniciadores tienen acceso a las LUN.
++
+
+NOTE: Si crea un nuevo igroup mientras aprovisiona la LUN, debe esperar hasta el siguiente ciclo de detección (hasta 15 minutos) para utilizarlo para la creación de la LUN. Por lo tanto, se recomienda utilizar un igroup existente de la lista de iGroups disponibles.
+
++
+Si desea crear un nuevo igroup, seleccione el botón *Crear un nuevo iGroup* y, a continuación, introduzca la información necesaria para crear el igroup.
+
+
+
+. Haga clic en *Guardar*.
+
+
+La carga de trabajo se añade a la lista de cargas de trabajo de almacenamiento.

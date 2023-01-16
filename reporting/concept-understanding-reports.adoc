@@ -1,0 +1,24 @@
+---
+permalink: reporting/concept-understanding-reports.html 
+sidebar: sidebar 
+keywords:  
+summary: Los informes muestran información detallada sobre el almacenamiento, la red, la calidad del servicio y las relaciones de protección, lo que ayuda a identificar y solucionar los problemas potenciales antes de que se produzcan. 
+---
+= Informes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los informes muestran información detallada sobre el almacenamiento, la red, la calidad del servicio y las relaciones de protección, lo que ayuda a identificar y solucionar los problemas potenciales antes de que se produzcan.
+
+Es posible descargar informes como PDF o archivos de valores separados por comas (CSV). Al personalizar una vista, puede guardarla con un nombre único para utilizarla en el futuro. También puede programar un informe basado en esa vista para que se ejecute de forma regular y lo comparta con otras personas.
+
+Es posible gestionar todos los informes programados desde la página Report Schedules.
+
+[NOTE]
+====
+Para administrar informes, debe tener la función Administrador de aplicaciones o Administrador de almacenamiento.
+
+====

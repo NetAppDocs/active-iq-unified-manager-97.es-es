@@ -1,0 +1,149 @@
+---
+permalink: online-help/reference-logical-interface-events.html 
+sidebar: sidebar 
+keywords:  
+summary: Los eventos de LIF proporcionan información acerca del estado de sus LIF para que pueda supervisar si existen posibles problemas. Los eventos se agrupan por área de impacto e incluyen el nombre del evento y de captura, el nivel de impacto, el tipo de origen y la gravedad. 
+---
+= Eventos de la interfaz lógica (LIF)
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Los eventos de LIF proporcionan información acerca del estado de sus LIF para que pueda supervisar si existen posibles problemas. Los eventos se agrupan por área de impacto e incluyen el nombre del evento y de captura, el nivel de impacto, el tipo de origen y la gravedad.
+
+
+
+== Área de impacto: Disponibilidad
+
+[cols="1a,1a,1a,1a"]
+|===
+| Nombre del evento(nombre de la captura) | Nivel de impacto | Tipo de origen | Gravedad 
+
+
+ a| 
+Estado de LIF inactivo (ocumEvtLifStatusDown)
+ a| 
+Riesgo
+ a| 
+Interfaz
+ a| 
+Error
+
+
+
+ a| 
+Conmutación por error de LIF no posible (ocumEvtLifFail-overNotPossible)
+ a| 
+Riesgo
+ a| 
+Interfaz
+ a| 
+Advertencia
+
+
+
+ a| 
+LIF no en Puerto Hogar (ocumEvtLifNotAtHomePort)
+ a| 
+Riesgo
+ a| 
+Interfaz
+ a| 
+Advertencia
+
+|===
+
+
+== Área de impacto: Configuración
+
+[cols="1a,1a,1a,1a"]
+|===
+| Nombre del evento(nombre de la captura) | Nivel de impacto | Tipo de origen | Gravedad 
+
+
+ a| 
+Ruta LIF no configurada (no aplicable)
+ a| 
+Evento
+ a| 
+Interfaz
+ a| 
+Información
+
+|===
+
+
+== Área de impacto: Rendimiento
+
+[cols="1a,1a,1a,1a"]
+|===
+| Nombre del evento(nombre de la captura) | Nivel de impacto | Tipo de origen | Gravedad 
+
+
+ a| 
+Se ha incumplido el umbral crítico de la interfaz de red MB/s(ocumNetworkLifMbpsIncident)
+ a| 
+Incidente
+ a| 
+Interfaz
+ a| 
+Crítico
+
+
+
+ a| 
+Se ha incumplido el umbral de advertencia de la interfaz de red MB/s (ocumNetworkLifMbpsWarning)
+ a| 
+Riesgo
+ a| 
+Interfaz
+ a| 
+Advertencia
+
+
+
+ a| 
+Se ha incumplido el umbral crítico de la interfaz FCP MB/s(ocumFcpLifMbpsIncident)
+ a| 
+Incidente
+ a| 
+Interfaz
+ a| 
+Crítico
+
+
+
+ a| 
+Se ha incumplido el umbral de advertencia MB/s de la interfaz FCP (ocumFcpLifMbpsWarning)
+ a| 
+Riesgo
+ a| 
+Interfaz
+ a| 
+Advertencia
+
+
+
+ a| 
+Se ha incumplido el umbral crítico de la interfaz FCP de nVMF(ocumNvmfcLifMbpsIncident)
+ a| 
+Incidente
+ a| 
+Interfaz
+ a| 
+Crítico
+
+
+
+ a| 
+Se ha incumplido el umbral de advertencia MB/s de la interfaz FCP de nVMF (ocumNvmfcLifMbpsWarning)
+ a| 
+Riesgo
+ a| 
+Interfaz
+ a| 
+Advertencia
+
+|===

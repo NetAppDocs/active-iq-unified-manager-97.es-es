@@ -1,0 +1,38 @@
+---
+permalink: api-automation/concept-job-api.html 
+sidebar: sidebar 
+keywords:  
+summary: En Active IQ Unified Manager, las operaciones como añadir y modificar recursos se realizan mediante invocaciones de API síncronas y asíncronas. Un objeto Job creado para esa invocación puede realizar el seguimiento de las invocaciones programadas para la ejecución asíncrona. Cada objeto de trabajo tiene una clave única para su identificación. Cada objeto Job devuelve el URI del objeto Job al que tiene acceso y realiza un seguimiento del progreso del trabajo. Puede utilizar esta API para recuperar los detalles de cada ejecución. 
+---
+= Ver trabajos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+En Active IQ Unified Manager, las operaciones como añadir y modificar recursos se realizan mediante invocaciones de API síncronas y asíncronas. Un objeto Job creado para esa invocación puede realizar el seguimiento de las invocaciones programadas para la ejecución asíncrona. Cada objeto de trabajo tiene una clave única para su identificación. Cada objeto Job devuelve el URI del objeto Job al que tiene acceso y realiza un seguimiento del progreso del trabajo. Puede utilizar esta API para recuperar los detalles de cada ejecución.
+
+Puede consultar todos los objetos Job. También puede utilizar la clave de trabajo y los detalles del objeto de trabajo para ejecutar el siguiente conjunto de operaciones en los recursos.
+
+
+
+== Ver trabajos
+
+Puede utilizar este método para obtener una lista de todos los trabajos. El cuerpo de la respuesta consta de los detalles del trabajo de todos los trabajos. También puede ver los detalles de un objeto Job determinado especificando la clave Job en el URI. El cuerpo de respuesta consta de los detalles identificados por la clave de trabajo. En la respuesta, el último objeto Job se devuelve al principio. Si desea consultar un objeto Job en particular, introduzca el ID de trabajo del trabajo.
+
+[cols="1a,1a,1a"]
+|===
+| Categoría | Verbo HTTP | Ruta 
+
+
+ a| 
+servidor de gestión
+ a| 
+OBTENGA
+ a| 
+`/management-server/jobs`
+
+`+/management-server/jobs/{key}+`
+
+|===

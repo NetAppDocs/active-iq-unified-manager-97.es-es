@@ -1,0 +1,52 @@
+---
+permalink: online-help/concept-what-options-do-i-have-when-i-see-the-fix-it-button.html 
+sidebar: sidebar 
+keywords: fix it 
+summary: El botón Fix it le permite solucionar un problema del que Unified Manager haya sido notificado a través de un evento. 
+---
+= ¿Qué opciones tengo cuando veo el botón reparar TI
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+El botón *Fix it* le permite solucionar un problema del que Unified Manager ha sido notificado a través de un evento.
+
+Le recomendamos que haga clic en el botón *Fix it* para solucionar el problema cuando esté disponible. Sin embargo, si no está seguro de que desea resolver el problema como recomienda Unified Manager, puede realizar las siguientes acciones:
+
+[cols="1a,1a"]
+|===
+| ¿Qué desea hacer? | Acción 
+
+
+ a| 
+Tenga Unified Manager que solucione el problema.
+ a| 
+Haga clic en el botón *Fix it*.
+
+
+
+ a| 
+No solucione el problema en este momento y oculte esta acción de administración.
+ a| 
+Haga clic en la flecha hacia abajo y haga clic en *descartar*.
+
+
+
+ a| 
+Muestre los detalles de este evento para que pueda comprender mejor el problema.
+ a| 
+Haga clic en la flecha hacia abajo y haga clic en *Ver detalles del evento* para ver la página de detalles del evento.
+
+
+
+ a| 
+Muestre los detalles de este objeto de almacenamiento para que pueda comprender mejor el problema.
+ a| 
+Haga clic en el nombre del objeto de almacenamiento para mostrar detalles en la página Performance Explorer o Health Details.
+
+|===
+Antes de hacer clic en el botón *Fix it*, debe tomar nota del nombre del objeto (por ejemplo, "'cluster fas8040-206'" o "'volume phil_DB'") Para poder comprobar la lista de eventos más adelante y verificar que el evento correspondiente se encuentra en el estado Obsoleto, lo que significa que la corrección se ha realizado correctamente.
+
+En algunos casos, la corrección se refleja en el sondeo de configuración de 15 minutos siguiente. En otros casos, puede tardar hasta 24 horas en verificar el cambio de configuración y dejar que el evento se quede obsoleto.

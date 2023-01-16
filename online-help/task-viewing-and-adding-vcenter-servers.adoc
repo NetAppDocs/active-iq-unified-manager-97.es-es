@@ -1,0 +1,78 @@
+---
+permalink: online-help/task-viewing-and-adding-vcenter-servers.html 
+sidebar: sidebar 
+keywords: vCenter server 
+summary: 'Para ver y solucionar los problemas del rendimiento de las máquinas virtuales \(VM\), deben añadirse las vCenter asociadas en la instancia de Active IQ Unified Manager.' 
+---
+= Ver y añadir instancias de vCenter Server
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Para ver y solucionar problemas del rendimiento de las máquinas virtuales, deben añadirse las vCenter asociadas en la instancia de Active IQ Unified Manager.
+
+
+
+== Antes de empezar
+
+Antes de añadir o ver las instancias de vCenter, asegúrese de lo siguiente:
+
+* Conoce los nombres de vCenter.
+* Se puede acceder a vCenter para una detección correcta.
+* Conoce la dirección IP y tiene las credenciales mientras añade el para vCenter. Las credenciales deben ser de un administrador de vCenter o de un usuario raíz con acceso de solo lectura a vCenter.
+* La instancia de vCenter que desea añadir ejecuta vSphere 6.5 o una versión posterior.
+* La configuración de recogida de datos en el servidor de vCenter se establece en el nivel 3 con un intervalo de 5 minutos
+* Los valores de latencia en vCenter se configuran en milisegundos, no en microsegundos, para el cálculo correcto de los valores de latencia.
+* La hora del para vCenter pertenece a la zona horaria de vCenter.
+
+
+
+
+== Acerca de esta tarea
+
+En cada instancia de vCenter que se añada y se detecte, Unified Manager recopila los datos de configuración, como los detalles de los servidores vCenter y ESXi, la asignación de ONTAP, los detalles del almacén de datos y el número de máquinas virtuales alojadas. Además, recopila las métricas de rendimiento de los componentes.
+
+
+
+== Pasos
+
+. Vaya a *VMWARE* > *vCenter,* y compruebe si su instancia de vCenter está disponible en la lista.
++
+[NOTE]
+====
+Si la instancia de vCenter no está disponible, debe añadir la instancia de vCenter.
+
+====
++
+.. Haga clic en *Agregar*.
+.. Añada la dirección IP correcta para vCenter y compruebe que el dispositivo sea accesible.
+.. Añada el nombre de usuario y la contraseña del administrador o del usuario raíz con acceso de solo lectura a vCenter.
+.. Agregue el número de puerto personalizado si está utilizando otro puerto que no sea el predeterminado `443`.
+.. Haga clic en *Guardar*. Tras la detección correcta, se muestra un certificado de servidor que podrá aceptar.
++
+Cuando se acepta el certificado, la instancia de vCenter se añade a la lista de vCenter disponibles. La adición del dispositivo no genera en la recopilación de datos para las máquinas virtuales asociadas y la recogida se produce en los intervalos programados.
+
+
+
+. Si la instancia de vCenter está disponible en la página *vCenter*, compruebe su estado. Al pasar el ratón por el campo *Estado*, se muestra si vCenter funciona como se espera o si hay una advertencia o un error.
++
+[NOTE]
+====
+Añadir el para vCenter permite ver los siguientes Estados. Sin embargo, los datos de rendimiento y latencia de los equipos virtuales correspondientes pueden tardar hasta una hora después de agregar el para vCenter y reflejarlo con precisión.
+
+====
++
+** Verde: Normal, que indica que se ha detectado el para vCenter y que se han recogido correctamente las métricas de rendimiento
+** Amarillo: Advertencia (por ejemplo, cuando el nivel de estadísticas del servidor vCenter no se estableció en 3 o superior para obtener estadísticas de cada objeto)
+** Naranja: Error (indica cualquier error interno, como excepción, fallo en la recogida de datos de configuración o imposibilidad de acceder al para vCenter) es posible hacer clic en el icono de visualización de la columna (*Show/Hide*) para ver el mensaje de estado de un estado de vCenter y solucionar el problema.
+
+
+. En caso de que no se pueda acceder al para vCenter o que las credenciales se hayan modificado, edite los detalles del para vCenter. Seleccione la instancia de vCenter y, a continuación, haga clic en *Edit*.
+. Realice los cambios necesarios en la página *Editar VMware vCenter Server*.
+. Haga clic en *Guardar*.
++
+Una vez que la detección se realiza correctamente, el estado del para vCenter cambia.
+
+

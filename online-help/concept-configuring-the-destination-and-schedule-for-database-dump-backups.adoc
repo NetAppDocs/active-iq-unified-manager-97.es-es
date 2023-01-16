@@ -1,0 +1,52 @@
+---
+permalink: online-help/concept-configuring-the-destination-and-schedule-for-database-dump-backups.html 
+sidebar: sidebar 
+keywords:  
+summary: Puede configurar los ajustes de backup de la base de datos de Unified Manager para establecer la ruta de backup de la base de datos, el número de retención y las programaciones de backup. Se pueden habilitar backups programados diarios o semanales. De manera predeterminada, las copias de seguridad programadas están deshabilitadas. 
+---
+= Configurar los ajustes de backup de la base de datos
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Puede configurar los ajustes de backup de la base de datos de Unified Manager para establecer la ruta de backup de la base de datos, el número de retención y las programaciones de backup. Se pueden habilitar backups programados diarios o semanales. De manera predeterminada, las copias de seguridad programadas están deshabilitadas.
+
+
+
+== Antes de empezar
+
+* Debe tener el rol de operador, administrador de aplicaciones o administrador de almacenamiento.
+* Debe tener un mínimo de 150 GB de espacio disponible en la ubicación que defina como ruta de backup.
++
+Se recomienda que utilice una ubicación remota externa al sistema host de Unified Manager.
+
+* Cuando Unified Manager esté instalado en un sistema Linux, compruebe que el usuario "'jboss'" tiene permisos de escritura en el directorio de copia de seguridad.
+* No se deben programar operaciones de backup para que se produzcan inmediatamente después de añadir un clúster nuevo mientras Unified Manager recoge 15 días de datos de rendimiento históricos.
+
+
+
+
+== Acerca de esta tarea
+
+Se requiere más tiempo la primera vez que se realiza un backup que para backups posteriores, ya que el primer backup es un backup completo. Un backup completo puede tener más de 1 GB y puede tardar entre tres y cuatro horas. Los backups posteriores son incrementales y requieren menos tiempo.
+
+[NOTE]
+====
+Si encuentra que el número de archivos de copia de seguridad incremental es demasiado grande para el espacio que ha asignado para las copias de seguridad, consulte https://kb.netapp.com/app/answers/answer_view/a_id/1087704/loc/en_US["Respuesta 1087704 de la base de conocimientos"] para saber cómo puede crear una nueva copia de seguridad completa periódicamente para reemplazar la copia de seguridad completa antigua y todos sus archivos incrementales secundarios.
+
+====
+
+
+== Pasos
+
+. En el panel de navegación izquierdo, haga clic en *General* > *copia de seguridad de la base de datos*.
+. En la página *copia de seguridad de la base de datos*, haga clic en *Configuración de copia de seguridad*.
+. Configure los valores adecuados para una ruta de backup, un recuento de retención y una programación.
++
+El valor predeterminado para el número de retención es 10; se puede usar 0 para crear copias de seguridad ilimitadas.
+
+. Seleccione el botón *Diario programado* o *Semanal programado* y, a continuación, especifique los detalles del programa.
+. Haga clic en *aplicar*.
+

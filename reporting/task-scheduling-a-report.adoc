@@ -1,0 +1,58 @@
+---
+permalink: reporting/task-scheduling-a-report.html 
+sidebar: sidebar 
+keywords: sample report schedule 
+summary: Después de tener una vista que desea programar para la generación y distribución regular como un informe, puede programar el informe. 
+---
+= Programar un informe
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Después de tener una vista que desea programar para la generación y distribución regular como un informe, puede programar el informe.
+
+
+
+== Antes de empezar
+
+* Debe tener el rol de administrador de aplicaciones o de administrador del almacenamiento.
+* Debe haber configurado la configuración del servidor SMTP en la página *General* > *Notificaciones* para que el motor de informes pueda enviar informes como adjuntos de correo electrónico a la lista de destinatarios desde el servidor de Unified Manager.
+* El servidor de correo electrónico debe configurarse para permitir el envío de archivos adjuntos con los correos electrónicos generados.
+
+
+
+
+== Acerca de esta tarea
+
+Utilice los pasos siguientes para probar y programar un informe que se generará para una vista. Seleccione o personalice la vista que desee usar. El procedimiento siguiente utiliza una vista de red que muestra el rendimiento de las interfaces de red, pero puede utilizar cualquier vista que desee.
+
+
+
+== Pasos
+
+. Abra la vista. En este ejemplo, se utiliza la vista de red predeterminada que muestra el rendimiento de la LIF. En el panel de navegación izquierdo, haga clic en**Network** > *interfaces de red*.
+. Personalice la vista según sea necesario.
+. Después de personalizar la vista, puede proporcionar un nombre único en el campo *Ver* y hacer clic en la Marca de verificación para guardarla.
++
+image::../media/view-save.gif[ver guardar]
+
+. Descargue el informe como un archivo *CSV* o *PDF* para ver el resultado antes de programarlo o compartirlo.
++
+Abra el archivo con una aplicación instalada, como Microsoft Excel (CSV) o Adobe Acrobat (PDF).
+
+. Si está satisfecho con el informe, haga clic en *Informes programados*.
+. En la página *programas de informes*, haga clic en *Agregar programa*.
+. Acepte el nombre predeterminado, que es una combinación del nombre de la vista y la frecuencia, o personalice el *nombre de la programación*.
+. Para probar el informe programado por primera vez, agregue sólo como *destinatario*. Cuando esté satisfecho, agregue las direcciones de correo electrónico para todos los destinatarios del informe.
+. Especifique la frecuencia, *Diario* o *Semanal*, y el día, si es semanal, y la hora en la que desea que se genere y distribuya el informe a los destinatarios.
+. Seleccione el formato *PDF* o *CSV*.
+. Haga clic en la Marca de verificación para guardar la programación del informe.
++
+image::../media/scheduled-reports.gif[informes programados]
+
++
+El informe se envía inmediatamente como prueba. Después de esto, el informe genera y se envía por correo electrónico a los destinatarios enumerados utilizando la frecuencia especificada.
+
+

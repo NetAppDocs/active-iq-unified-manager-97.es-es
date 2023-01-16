@@ -1,0 +1,84 @@
+---
+permalink: online-help/concept-managing-storage-efficiency-policies.html 
+sidebar: sidebar 
+keywords: add 
+summary: 'Una normativa de eficiencia del almacenamiento \(SEP\) permite definir las características de eficiencia del almacenamiento de una carga de trabajo. Es posible asignar una política de eficiencia del almacenamiento a una carga de trabajo al crear inicialmente la carga de trabajo, o después editar la carga de trabajo.' 
+---
+= Gestión de políticas de eficiencia del almacenamiento
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+UNA Política de eficiencia del almacenamiento (SEP) permite definir las características de eficiencia del almacenamiento de una carga de trabajo. Es posible asignar una política de eficiencia del almacenamiento a una carga de trabajo al crear inicialmente la carga de trabajo, o después editar la carga de trabajo.
+
+La eficiencia del almacenamiento incluye el uso de tecnologías, como thin provisioning, deduplicación y compresión de datos que aumentan el aprovechamiento del almacenamiento y reducen los costes de almacenamiento. Al crear políticas de eficiencia del almacenamiento, puede utilizar estas tecnologías de ahorro de espacio por separado o juntas para lograr la máxima eficiencia del almacenamiento. Cuando asocia las políticas con las cargas de trabajo de almacenamiento, los ajustes de política especificados se asignan a ellas. Unified Manager le permite asignar políticas de eficiencia del almacenamiento definidas por el sistema y definidas por el usuario para optimizar los recursos de almacenamiento de su centro de datos.
+
+Unified Manager proporciona dos políticas de eficiencia del almacenamiento definidas por el sistema: Alta y baja. Estos Sep son aplicables a la mayoría de las cargas de trabajo de almacenamiento de un centro de datos; sin embargo, puede crear sus propias normas si los PES definidos por el sistema no cumplen sus requisitos.
+
+No es posible modificar una Política de eficiencia del almacenamiento definida por el sistema o asignada actualmente a una carga de trabajo. No puede eliminar una Política de eficiencia del almacenamiento que esté asignada a una carga de trabajo o si es la única Política de eficiencia del almacenamiento disponible.
+
+La página políticas de eficiencia del almacenamiento enumera las políticas de eficiencia del almacenamiento disponibles y le permite agregar, editar y eliminar Sep personalizados. Esta página muestra la siguiente información:
+
+[cols="1a,1a"]
+|===
+| Campo | Descripción 
+
+
+ a| 
+Nombre
+ a| 
+Nombre de la Política de eficiencia de almacenamiento.
+
+
+
+ a| 
+Tipo
+ a| 
+Si la política está definida por el sistema o por el usuario.
+
+
+
+ a| 
+Reserva de espacio
+ a| 
+Si el volumen tiene thin provisioning o thick-Provisioning.
+
+
+
+ a| 
+Deduplicación
+ a| 
+Si la deduplicación está activada en el volumen:
+
+* `Inline`: La deduplicación se produce mientras se escribe en el volumen
+* `Background`: La deduplicación se produce en segundo plano
+* `Disable`: La deduplicación está desactivada en el volumen
+
+
+
+
+ a| 
+Compresión
+ a| 
+Si la compresión de datos está habilitada en el volumen:
+
+* `Inline`: La compresión de datos se produce mientras se escribe en el volumen
+* `Background`: La compresión de datos se produce en segundo plano
+* `Disable`: La compresión de datos está desactivada en el volumen
+
+
+
+
+ a| 
+Cargas de trabajo
+ a| 
+Número de cargas de trabajo de almacenamiento a las que se les ha asignado la Política de eficiencia del almacenamiento
+
+|===
+
+
+== Directrices para crear una Política de eficiencia del almacenamiento personalizada
+
+Si las políticas de eficiencia del almacenamiento existentes no cumplen los requisitos de las políticas de las cargas de trabajo de almacenamiento, puede crear una Política de eficiencia del almacenamiento personalizada. Sin embargo, se recomienda intentar utilizar las políticas de eficiencia del almacenamiento definidas por el sistema para sus cargas de trabajo de almacenamiento, y solo crear políticas de eficiencia del almacenamiento personalizadas si es necesario.
