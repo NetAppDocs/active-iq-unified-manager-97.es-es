@@ -42,7 +42,7 @@ En la pantalla All Workloads, puede ver todas las cargas de trabajo del centro d
 
 La página también permite ver los detalles de rendimiento de una carga de trabajo. Para ver información detallada sobre las IOPS, la capacidad y la latencia de la carga de trabajo, haga clic en el botón *elegir / columnas de pedido* y seleccione columnas específicas para ver. La columna Performance View muestra la tasa media y máxima de IOPS de una carga de trabajo, y puede hacer clic en el icono del analizador de cargas de trabajo para ver el análisis detallado de IOPS. El botón *analizar carga de trabajo* del cuadro emergente Análisis de IOPS le lleva a la página Análisis de carga de trabajo, donde puede seleccionar un intervalo de tiempo y ver las tendencias de latencia, rendimiento y capacidad para la carga de trabajo seleccionada. Para obtener más información acerca del analizador de cargas de trabajo, consulte _solución de problemas de cargas de trabajo mediante el analizador de cargas de trabajo_
 
-link:concept-troubleshooting-workloads-using-the-workload-analyzer.adoc["Solucionar problemas de cargas de trabajo mediante el analizador de cargas de trabajo"]
+link:concept-troubleshooting-workloads-using-the-workload-analyzer.html["Solucionar problemas de cargas de trabajo mediante el analizador de cargas de trabajo"]
 
 
 

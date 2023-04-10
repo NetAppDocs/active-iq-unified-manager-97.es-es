@@ -56,7 +56,7 @@ Los servidores vCenter permiten caracteres especiales (como %, &, *, $, #, @, !,
 . Haga clic en la flecha hacia abajo junto a la máquina virtual para ver la vista de resumen de la topología de los componentes en las capas de computación, red y almacenamiento. Se resalta el nodo que tiene problemas de latencia. La vista de resumen muestra la peor latencia de los componentes. Por ejemplo, si una máquina virtual tiene más de un disco virtual, esta vista muestra el disco virtual que tiene la peor latencia entre todos los discos virtuales.
 . Para analizar la latencia y el rendimiento del almacén de datos durante un período de tiempo, haga clic en el botón *Workload Analyzer* situado en la parte superior del icono del objeto del almacén de datos. Se va a la página Workload Analysis, donde puede seleccionar un rango de tiempo y ver los gráficos de rendimiento del almacén de datos. Para obtener más información acerca del analizador de cargas de trabajo, consulte _solución de problemas de cargas de trabajo mediante el analizador de cargas de trabajo_.
 +
-link:concept-troubleshooting-workloads-using-the-workload-analyzer.adoc["Solucionar problemas de cargas de trabajo mediante el analizador de cargas de trabajo"]
+link:concept-troubleshooting-workloads-using-the-workload-analyzer.html["Solucionar problemas de cargas de trabajo mediante el analizador de cargas de trabajo"]
 
 
 

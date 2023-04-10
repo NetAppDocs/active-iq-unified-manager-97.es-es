@@ -17,7 +17,7 @@ summary: Guía de inicio rápido para Unified Manager en plataforma Linux.
 * Espacio libre en disco: 100 GB de espacio en disco `/opt/netapp/data` directorio, 50 GB en la partición raíz. Para montaje independiente `/opt` y.. `/var/log` directorios, asegúrese de que `/opt` Tiene 15 GB, `/var/log` Tiene 16 GB, y. `/tmp` Tiene 10 GB de espacio libre.
 
 
-Para obtener información detallada sobre los requisitos del sistema y sobre cómo instalar el producto en un sitio protegido, consulte link:./install-linux/concept-requirements-for-installing-unified-manager.html["Requisitos para instalar Unified Manager"] y la link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidad"].
+Para obtener información detallada sobre los requisitos del sistema y sobre cómo instalar el producto en un sitio protegido, consulte link:concept-requirements-for-installing-unified-manager.html["Requisitos para instalar Unified Manager"] y la link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidad"].
 
 
 

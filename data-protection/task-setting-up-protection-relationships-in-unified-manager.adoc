@@ -21,7 +21,7 @@ Hay varios pasos que debe realizar para usar Unified Manager y OnCommand Workflo
 * Debe haber establecido relaciones entre iguales entre dos clústeres o dos máquinas virtuales de almacenamiento (SVM).
 * OnCommand Workflow Automation debe integrarse con Unified Manager:
 +
-** link:task-configuring-a-connection-between-workflow-automation-and-unified-manager.adoc["Configure OnCommand Workflow Automation"]
+** link:task-configuring-a-connection-between-workflow-automation-and-unified-manager.html["Configure OnCommand Workflow Automation"]
 ** xref:task-verifying-unified-manager-data-source-caching-in-workflow-automation.adoc[Verificación del almacenamiento en caché de origen de datos de Unified Manager en Workflow Automation]
 
 
@@ -34,7 +34,7 @@ Hay varios pasos que debe realizar para usar Unified Manager y OnCommand Workflo
 . Según el tipo de relación de protección que desee crear, realice una de las siguientes acciones:
 +
 ** xref:task-creating-a-snapmirror-protection-relationship-from-the-health-volume-details-page.adoc[Cree una relación de protección de SnapMirror].
-** link:task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.adoc["Cree una relación de protección SnapVault"].
+** link:task-creating-a-snapvault-protection-relationship-from-the-health-volume-details-page.html["Cree una relación de protección SnapVault"].
 
 
 . Si desea crear una directiva para la relación, en función del tipo de relación que esté creando, realice una de las siguientes acciones:

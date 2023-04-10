@@ -74,7 +74,7 @@ Consulte la documentación de Red Hat para obtener información acerca de Red Ha
 Si el repositorio de EPEL no está configurado en su sistema, debe descargar y configurar manualmente el repositorio.
 
 +
-link:task-manually-configuring-the-epel-repository.adoc["Configurar manualmente el repositorio de EPEL"]
+link:task-manually-configuring-the-epel-repository.html["Configurar manualmente el repositorio de EPEL"]
 
 * Si no está instalada la versión correcta de MySQL, debe habilitar el repositorio de MySQL para que pueda instalar correctamente el software MySQL en el sistema.
 +

@@ -29,7 +29,7 @@ Unified Manager es compatible con el sistema operativo Windows de 64 bits para l
 * Espacio libre en disco: 100 GB de espacio en disco para el directorio de instalación, 50 GB de espacio en disco para el directorio de datos de MySQL
 
 
-Para ver los requisitos detallados del sistema, consulte link:./install-windows/concept-requirements-for-installing-unified-manager.html["Requisitos para instalar Unified Manager"] y.. link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidad"].
+Para ver los requisitos detallados del sistema, consulte link:concept-requirements-for-installing-unified-manager.html["Requisitos para instalar Unified Manager"] y.. link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidad"].
 
 
 
@@ -47,7 +47,7 @@ Para ver los requisitos detallados del sistema, consulte link:./install-windows/
 
 === Instale Unified Manager
 
-Para instalar Unified Manager, asegúrese de tener instalado Microsoft .NET 4.5.2 o una versión posterior. Como parte del proceso de instalación, Unified Manager instala otros paquetes de terceros según sea necesario. Para obtener más información acerca de los paquetes de software dependientes, consulte link:./install-windows/reference-windows-software-and-installation-requirements.html["Requisitos de instalación y software de Windows"].
+Para instalar Unified Manager, asegúrese de tener instalado Microsoft .NET 4.5.2 o una versión posterior. Como parte del proceso de instalación, Unified Manager instala otros paquetes de terceros según sea necesario. Para obtener más información acerca de los paquetes de software dependientes, consulte link:reference-windows-software-and-installation-requirements.html["Requisitos de instalación y software de Windows"].
 
 . Inicie sesión en Windows con la cuenta de administrador local predeterminada.
 . En el directorio en el que ha descargado el archivo de instalación, haga clic con el botón derecho del ratón y ejecute el archivo ejecutable (.exe) de Unified Manager como administrador.

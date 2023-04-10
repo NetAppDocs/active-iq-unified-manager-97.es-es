@@ -35,7 +35,7 @@ Se muestra la página de detalles Event para el error.
 
 . En la página de detalles *evento*, puede realizar una o más de las siguientes tareas:
 +
-** Revise el mensaje de error en el campo causa y haga clic en las sugerencias en acciones correctivas sugeridas para revisar las descripciones de posibles soluciones. link:task-performing-suggested-remedial-actions-for-a-full-volume.adoc["Ejecución de acciones correctivas sugeridas para un volumen completo"]
+** Revise el mensaje de error en el campo causa y haga clic en las sugerencias en acciones correctivas sugeridas para revisar las descripciones de posibles soluciones. link:task-performing-suggested-remedial-actions-for-a-full-volume.html["Ejecución de acciones correctivas sugeridas para un volumen completo"]
 ** Haga clic en el nombre del objeto, en este caso un volumen, en el campo Source para obtener detalles del objeto. xref:reference-health-volume-details-page.adoc[Página de detalles Volume]
 ** Busque las notas que se podrían haber añadido acerca de este evento. xref:task-adding-and-reviewing-notes-about-an-event.adoc[Agregar y revisar notas asociadas a un evento]
 ** Agregar una nota al evento. xref:task-adding-and-reviewing-notes-about-an-event.adoc[Agregar y revisar notas asociadas a un evento]

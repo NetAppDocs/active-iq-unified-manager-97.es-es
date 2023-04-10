@@ -34,7 +34,7 @@ Se requiere más tiempo la primera vez que se realiza un backup que para backups
 
 [NOTE]
 ====
-Si encuentra que el número de archivos de copia de seguridad incremental es demasiado grande para el espacio que ha asignado para las copias de seguridad, consulte https://kb.netapp.com/app/answers/answer_view/a_id/1087704/loc/en_US["Respuesta 1087704 de la base de conocimientos"] para saber cómo puede crear una nueva copia de seguridad completa periódicamente para reemplazar la copia de seguridad completa antigua y todos sus archivos incrementales secundarios.
+Si descubre que el número de archivos de copia de seguridad incremental es demasiado grande para el espacio que ha asignado para las copias de seguridad, puede crear una nueva copia de seguridad completa periódicamente para reemplazar la copia de seguridad completa antigua y todos sus archivos incrementales secundarios.
 
 ====
 

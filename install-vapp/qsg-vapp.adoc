@@ -18,7 +18,7 @@ summary: Guía de inicio rápido para Unified Manager en plataforma VMware vSphe
 * Espacio libre en disco: 5 GB (thin provisioning), 152 GB (thick provisioning)
 
 
-Para ver los requisitos detallados del sistema, consulte link:./install-vapp/concept-requirements-for-installing-unified-manager.html["Requisitos para instalar Unified Manager"] y.. link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidad"].
+Para ver los requisitos detallados del sistema, consulte link:concept-requirements-for-installing-unified-manager.html["Requisitos para instalar Unified Manager"] y.. link:http://mysupport.netapp.com/matrix["Matriz de interoperabilidad"].
 
 
 

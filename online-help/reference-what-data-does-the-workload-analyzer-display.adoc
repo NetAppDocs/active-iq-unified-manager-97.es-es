@@ -43,7 +43,7 @@ Muestra gráficos de latencia, rendimiento (tanto IOPS como MB/s) y aprovechamie
 +
 ** *Latencia* muestra la latencia de la carga de trabajo. El gráfico tiene tres vistas que le permiten ver la latencia total, la latencia descompuesta por lecturas, escrituras y otros procesos, y la latencia descompuesta por el componente del clúster.
 +
-Consulte link:concept-cluster-components-and-why-they-can-be-in-contention.adoc["Los componentes del clúster y el motivo por los que pueden estar en contención"] para obtener una descripción de los componentes del clúster que se muestran aquí.
+Consulte link:concept-cluster-components-and-why-they-can-be-in-contention.html["Los componentes del clúster y el motivo por los que pueden estar en contención"] para obtener una descripción de los componentes del clúster que se muestran aquí.
 
 ** *Rendimiento* muestra tanto IOPS como MB/s de rendimiento para la carga de trabajo. El gráfico tiene dos vistas que permiten ver el rendimiento total y el rendimiento dividido por lecturas, escrituras y otros procesos.
 +
