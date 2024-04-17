@@ -1,5 +1,5 @@
 ---
-permalink: reference-legal-notices.html 
+permalink: legal-notices.html 
 sidebar: sidebar 
 keywords: legal, notices, copyright, trademarks, patents 
 summary: Los avisos legales proporcionan acceso a las declaraciones de copyright, marcas comerciales, patentes y mucho más. 
