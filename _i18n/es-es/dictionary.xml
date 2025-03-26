@@ -2813,7 +2813,6 @@
   <block id="3400473a58cb0d6c7445f5e7b2a98202" category="doc">Comprender los eventos y las alertas de rendimiento</block>
   <block id="5dc054bc034e6f0df392b6db04566d3a" category="paragraph">Es posible configurar alertas para que envíen notificaciones por correo electrónico automáticamente cuando se produzcan eventos de rendimiento de ciertos tipos de gravedad.</block>
   <block id="91d9102f2b20d2487525cb47bf7d79a5" category="summary">Documentación para documentos de Active IQ Unified Manager, documentos de AIUM y de UM</block>
-  <block id="4a58c6ba2ac7cf0f2cd001d223b14e50" category="doc">Documentación de Active IQ Unified Manager</block>
   <block id="4b9c5e06bb050d07f83021986c5f0938" category="summary">Puede realizar una actualización a una versión más reciente de MySQL en el servidor Linux conectado en el que está instalado Unified Manager para obtener soluciones para vulnerabilidades de seguridad. Para cualquier actualización menor, la versión base de MySQL debe ser 8.0.20 o posterior. Si la versión instalada de MySQL en el sistema es anterior a 8.0.20, el proceso de actualización de Unified Manager 9.7 actualiza automáticamente MySQL a 8.0.20. No debe ejecutar una actualización independiente de MySQL desde una versión anterior a la versión 8.0.20.</block>
   <block id="bae43629fc80334bfb253eda91870d0a" category="doc">Actualizar MySQL en Linux</block>
   <block id="4deccbdcca77f1db1736602ad1ea1b28" category="paragraph">La actualización manual de MySQL se aplica únicamente a sistemas conectados a Internet. Si la versión instalada de MySQL en el sistema es 5.7, no debe intentar actualizar directamente MySQL a la versión 8.0.20. Esto provoca la pérdida de datos de las aplicaciones.</block>
@@ -12478,4 +12477,5 @@
   <block id="ec41073735b02d172b0bc1ee60ea5ec9" category="paragraph"><block ref="ec41073735b02d172b0bc1ee60ea5ec9" category="inline-link-rx"></block></block>
   <block id="20bde173581d26c0c8c8f826587fe6b1" category="paragraph">Al ver todos los clústeres, este panel muestra el número de clústeres que son compatibles o no, el número de SVM que son compatibles o no, y el número de volúmenes cifrados o no. El cumplimiento se basa en<block ref="736160f7960b3abe2152eecfe71d1435" category="inline-link-rx"></block>la . Haga clic en la flecha derecha de la parte superior del panel para ver los detalles de seguridad de todos los clústeres de la página Seguridad.</block>
   <block id="796f4a9be8e525f7e4d64c24bac529c9" category="paragraph"><block ref="796f4a9be8e525f7e4d64c24bac529c9" category="inline-link-rx"></block></block>
+  <block id="dd5452c4b1a9b73792ee149d9b8c4bd0" category="sidebar">Documentación de Active IQ Unified Manager 9,7</block>
 </blocks>
